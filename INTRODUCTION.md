@@ -317,5 +317,69 @@ Java programs can run on **any platform** as long as the platform has **JVM (Jav
 ### **Conclusion:**  
 Java achieves **platform independence** because of the JVM, making it truly **Write Once, Run Anywhere**.  
 
+# JVM, JRE, and JDK  
+
+## **1. JVM (Java Virtual Machine)**  
+- JVM is an **abstract machine** (it does not physically exist).  
+- It provides a **runtime environment** to execute Java **bytecode**.  
+- JVM can also run programs written in other languages if compiled to bytecode.  
+- **Java is platform-independent, but JVM is platform-dependent.**  
+
+### **JVM Performs 4 Main Tasks:**  
+1. **Loads code**  
+2. **Verifies code**  
+3. **Executes code**  
+4. **Provides a runtime environment**  
+
+---
+
+## **2. JRE (Java Runtime Environment)**  
+- JRE stands for **Java Runtime Environment**.  
+- It provides the **runtime environment** required to run Java applications.  
+- JRE = **JVM + Libraries + Other Files**  
+- JRE **physically exists**.  
+
+### **Key Point:**  
+- **JRE does NOT contain development tools** like a compiler. It is used **only to run Java applications**.  
+
+---
+
+## **3. JDK (Java Development Kit)**  
+- JDK stands for **Java Development Kit**.  
+- It is used for **developing** Java applications.  
+- JDK = **JRE + Development Tools**  
+
+### **JDK Includes:**  
+- **JVM** (Java Virtual Machine)  
+- **JRE** (Java Runtime Environment)  
+- **Compiler (`javac`)** – Converts Java code into bytecode  
+- **Interpreter (`java`)** – Runs Java programs  
+- **Jar Tool (`jar`)** – Used to package Java applications  
+- **Documentation Generator (`Javadoc`)**  
+
+### **JDK Editions by Oracle:**  
+1. **Java SE (Standard Edition)** – General-purpose applications  
+2. **Java EE (Enterprise Edition)** – Web & enterprise applications  
+3. **Java ME (Micro Edition)** – Mobile & embedded systems  
+
+---
+
+## **Comparison Table**  
+
+| Feature | JVM | JRE | JDK |
+|---------|-----|-----|-----|
+| Purpose | Runs Java bytecode | Provides runtime environment | Develops and runs Java applications |
+| Contains | Just the Java Virtual Machine | JVM + Libraries | JRE + Development Tools |
+| Required for | Running Java programs | Running Java programs | Developing and Running Java programs |
+| Includes Compiler? | ❌ No | ❌ No | ✅ Yes |
+
+---
+
+### **Conclusion:**  
+- **JVM** runs Java programs.  
+- **JRE** provides the required libraries and files.  
+- **JDK** is needed for developing Java applications.  
+
+
 
 
