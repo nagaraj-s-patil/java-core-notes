@@ -193,3 +193,64 @@ class Pen {
 
 ![image](https://github.com/user-attachments/assets/d7514fb6-89bb-4b8e-886d-4752cb3bbddf)
 
+
+# **2.3 Object Creation & Direct Initialization**  
+
+### **Example:**  
+```java
+class Bike {  
+    String color = "blue";  
+    String name = "R15 V3";  
+
+    Bike b1 = new Bike();  
+    Bike b2 = new Bike();  
+    Bike b3 = new Bike();  
+}  
+```
+
+![image](https://github.com/user-attachments/assets/2b363c5b-bee6-40cb-b676-1778105d6084)
+
+---
+
+# **2.4 Object Creation & Initialization using Object Reference**  
+
+
+![image](https://github.com/user-attachments/assets/b6cc6b0f-82cd-44b5-a4db-7195e5201ab3)
+
+### **Example 1:**  
+```java
+class Bike {  
+    String color = "blue";  
+    String name = "R15 V3";  
+
+    Bike b1 = new Bike();  
+    Bike b2 = new Bike();  
+    Bike b3 = new Bike();  
+}  
+```
+
+### **Example 2:**  
+```java
+class Bike {  
+    String color;  
+    String name;  
+
+    public static void main(String[] args) {  
+        Bike b1 = new Bike();  
+        b1.color = "Orange";  
+        b1.name = "Duke";  
+
+        Bike b2 = new Bike();  
+        b2.color = "Red";  
+        b2.name = "Pulsar";  
+
+        Bike b3 = new Bike();  
+        b3.color = "Blue";  
+        b3.name = "R15 V3";  
+    }  
+}  
+```
+
+
+
+
