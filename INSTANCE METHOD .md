@@ -1,4 +1,4 @@
-      <h1> *INSTANCE METHOD***</h1>
+      <h1>INSTANCE METHOD</h1>
 # **Methods in Java**  
 
 A **method** is a collection of statements that **perform a specific task** and **return a result** to the caller.  
