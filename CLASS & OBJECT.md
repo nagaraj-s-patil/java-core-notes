@@ -86,7 +86,7 @@ class Car {
 ✅ **Memory allocation & deallocation** is handled by JVM.  
 ✅ **Objects are created in Heap Memory** using the `new` keyword.  
 ✅ **Constructors have the same name as the class and initialize objects.**  
-```  
+
 
 ![image](https://github.com/user-attachments/assets/b7d56ce0-aaae-4eda-9f7a-132cc2b55af6)
 
