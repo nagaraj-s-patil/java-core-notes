@@ -1,6 +1,6 @@
-Here is your **full Markdown (.md) file** with a simple and clear explanation:  
 
-```md
+
+
 # **Class & Object in Java**  
 
 ## **1. Class**  
