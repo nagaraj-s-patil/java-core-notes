@@ -216,3 +216,106 @@ public class Main {
     }  
 }  
 ```
+![image](https://github.com/user-attachments/assets/8ca93949-0b91-4093-aa1f-149dcc906857)
+
+# 1.7.2 Aggregation  
+
+**Aggregation** is a special form of association where the associated object **can exist independently** even if the owner object is destroyed.  
+
+- If the **owner object is destroyed**, the **associated object still exists**.  
+- This is called a **Weak Has-A Relationship**.  
+
+### **Example:**  
+
+```java
+class College {  
+    String name;  
+
+    College(String name) {  
+        this.name = name;  
+    }  
+
+    void displayCollege() {  
+        System.out.println("College: " + name);  
+    }  
+}  
+
+class Student {  
+    String studentName;  
+    College college;  // Aggregation (Student has a College)  
+
+    Student(String studentName, College college) {  
+        this.studentName = studentName;  
+        this.college = college;  
+    }  
+
+    void displayStudent() {  
+        System.out.println("Student: " + studentName);  
+        college.displayCollege();  
+    }  
+}  
+
+public class Main {  
+    public static void main(String[] args) {  
+        College college = new College("ABC University");  
+        Student student = new Student("John", college);  
+        student.displayStudent();  
+    }  
+}  
+![image](https://github.com/user-attachments/assets/9c49f910-14f6-4af9-9a4d-2acc5ad48e31)
+
+# 1.8 Java Compilation  
+
+Java compilation happens in **2 steps**:  
+
+1. **Check Syntax** – The compiler checks if the program is written correctly.  
+2. **Generate Bytecode** – If there are no errors, the compiler creates a **.class file (bytecode)**.  
+
+### **Important Note:**  
+- If there are **syntax errors**, the compiler **does not** generate bytecode.  
+- Instead, it shows an **error message**.  
+
+### **Example:**  
+
+✅ **Correct Program (Compiles Successfully)**  
+```java
+class Hello {  
+    public static void main(String[] args) {  
+        System.out.println("Hello, Java!");  
+    }  
+}  
+```
+![image](https://github.com/user-attachments/assets/1c6d0221-2aca-40e8-a8c9-eecc3853ef05)
+
+# 1.9 WORA Architecture (Write Once, Run Anywhere)  
+
+
+![image](https://github.com/user-attachments/assets/a436aa5c-ca2f-492f-98d2-0634efee6856)
+
+
+Java programs can run on **any platform** as long as the platform has **JVM (Java Virtual Machine)**.  
+
+### **How It Works?**  
+1. **Java Code → Compiled → Bytecode (.class file)**  
+2. The **JVM** interprets the **bytecode** and runs the program on any system with JVM.  
+
+### **Why is Java WORA?**  
+- **Write Once, Run Anywhere (WORA)** means Java code written on one system **can run on any system** with JVM **without modification**.  
+- This is possible because Java **does not compile directly to machine code**, but instead generates **bytecode**, which JVM executes.  
+
+### **Comparison with C & C++**  
+| Feature         | C/C++                            | Java (WORA)                     |
+|---------------|--------------------------------|--------------------------------|
+| Compilation   | Converts code into **machine-specific binary** | Converts code into **bytecode** |
+| Portability   | **Not portable** (recompilation needed for different systems) | **Portable** (runs on any JVM) |
+| Execution     | **Directly executed by CPU**  | **Interpreted by JVM** |
+
+### **Example:**  
+1. Write and compile Java code on **Windows**  
+2. Run the same **bytecode (.class file)** on **Linux** or **Mac** without changes  
+
+### **Conclusion:**  
+Java achieves **platform independence** because of the JVM, making it truly **Write Once, Run Anywhere**.  
+
+
+
