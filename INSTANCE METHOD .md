@@ -150,11 +150,8 @@ class Shop {
     }  
 }  
 ```
-```  
 
-Here is your content in **Markdown (.md) format**, keeping it **easy, simple, and unchanged**:  
 
-```md
 # **Methods in Java**  
 
 ---
