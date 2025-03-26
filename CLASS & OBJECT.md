@@ -88,4 +88,61 @@ class Car {
 ✅ **Constructors have the same name as the class and initialize objects.**  
 ```  
 
-This **Markdown file** is **formatted** for easy reading and understanding. Let me know if you need any modifications!
+![image](https://github.com/user-attachments/assets/b7d56ce0-aaae-4eda-9f7a-132cc2b55af6)
+
+
+```md
+# **2.1 Object Reference / Object Address**  
+
+## **What is an Object Reference?**  
+- An **Object Reference** stores the **address** of an object in **Heap Memory**.  
+- The actual object exists in the **Heap Memory**, while the reference is used to access it.  
+- Each object has a **unique memory address**.  
+
+---
+
+## **Heap Memory Representation**  
+
+| Object Name | Memory Address |
+|------------|----------------|
+| Bike       | 13867C         |
+| Car        | 1467FC         |
+| Carrot     | 190FFD         |
+
+---
+
+## **Example of Object Reference in Java**  
+```java
+class Bike {  
+    String model;  
+
+    Bike(String model) {  
+        this.model = model;  
+    }  
+}
+
+public class Main {  
+    public static void main(String[] args) {  
+        Bike b1 = new Bike("Yamaha");  
+        Bike b2 = new Bike("Honda");  
+
+        System.out.println(b1);  // Prints memory address of b1  
+        System.out.println(b2);  // Prints memory address of b2  
+    }  
+}  
+```
+**Output (Example memory addresses):**  
+```
+Bike@13867C  
+Bike@1467FC  
+```
+
+---
+
+## **Key Points**  
+✅ **Object Reference** stores the **memory address** of an object.  
+✅ **Objects are stored in Heap Memory**.  
+✅ **Reference variables** are used to access objects.  
+✅ JVM automatically assigns a **Hexadecimal memory address** to each object.  
+
+```  
