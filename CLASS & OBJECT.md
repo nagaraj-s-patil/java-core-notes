@@ -91,7 +91,6 @@ class Car {
 ![image](https://github.com/user-attachments/assets/b7d56ce0-aaae-4eda-9f7a-132cc2b55af6)
 
 
-```md
 # **2.1 Object Reference / Object Address**  
 
 ## **What is an Object Reference?**  
