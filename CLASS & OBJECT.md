@@ -144,7 +144,7 @@ Bike@1467FC
 ✅ **Reference variables** are used to access objects.  
 ✅ JVM automatically assigns a **Hexadecimal memory address** to each object.  
 
-```
+
 
 ![Uploading image.png…]()
 
