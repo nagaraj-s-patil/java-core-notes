@@ -149,3 +149,45 @@ Bike@1467FC
 ![image](https://github.com/user-attachments/assets/3a6c64c9-ebf6-46b2-a927-919edc47e55f)
 
 
+# **2.2 States**  
+
+## **What is a State?**  
+- The **state of an object** is its **property, information, or data** that describes the object.  
+- A **data member** is a **data holder** that **stores** information.  
+
+---
+
+## **Types of Data Members**  
+1. **Variable**  
+   - Data **changes** over time.  
+   - Non-final data members are called **Variables**.  
+   
+2. **Constant**  
+   - Represents a **fixed value**.  
+   - Declared using the `final` keyword.  
+
+### **Example:**  
+```java
+final String name = "Spiders";  // Constant  
+String name = "SRK";  // Variable  
+```
+
+---
+
+## **States & Behaviors in a Class**  
+- Since an **object is derived from a class**, its **states & behaviors** must be **declared inside the class**.  
+
+### **Example:**  
+```
+class Pen {  
+    String color = "green";  // State (Variable)  
+    String type = "marker";  // State (Variable)  
+
+    public static void main(String[] args) {  
+        Pen p1 = new Pen();  
+        Pen C1 = new Pen();  
+        Pen C2 = new Pen();  
+    }  
+}  
+```
+
