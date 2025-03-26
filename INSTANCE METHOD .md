@@ -147,4 +147,103 @@ class Shop {
 ```
 ```  
 
-This Markdown file keeps your **original content, examples, and format** unchanged while making it **easy and simple**. Let me know if you need any modifications!
+Here is your content in **Markdown (.md) format**, keeping it **easy, simple, and unchanged**:  
+
+```md
+# **Methods in Java**  
+
+---
+
+## **Example: Returning Objects from Methods**  
+```java
+class Money {  
+}  
+
+class Atm {  
+    Money dispense() {  
+        Money m = new Money();  
+        return m;  
+    }  
+}  
+```
+
+---
+
+## **Key Points about Methods:**  
+- A **method executes only when invoked**.  
+- A **method can be invoked multiple times**.  
+- The **main method is not required for compilation**, but **it is required for execution**.  
+
+---
+
+## **Example: Method Invocation**  
+```java
+class Pen {  
+    int price = 40;  
+    String color = "Black";  
+
+    void write() {  
+        System.out.println("Pen writes");  
+    }  
+
+    public static void main(String[] args) {  
+        System.out.println("Main starts");  
+        Pen p = new Pen();  
+        p.write(); // Invoking a method  
+        p.write(); // Invoking a method  
+        System.out.println("Main ends");  
+    }  
+}
+# **Methods in Java**  
+
+---
+
+## **Example 1: Dance Class with Method Invocation**  
+```java
+class Dance {  
+    int price = 40;  
+    String color = "Black";  
+
+    public static void main(String[] args) {  
+        System.out.println("Main starts");  
+        Dance d = new Dance();  
+        d.dance(); // Invoking Method  
+        d.dance(); // Invoking Method  
+        System.out.println("Main ends");  
+    }  
+
+    void dance() {  
+        String name = "Jackson";  
+        System.out.println(name + " dances");  
+    }  
+}  
+```
+
+---
+
+## **Example 2: Student Class with Multiple Methods**  
+```java
+class Student {  
+    String name = "Arya";  
+    String qualification = "B.E";  
+
+    void study() {  
+        System.out.println(name + " reads every day");  
+    }  
+
+    void sleep() {  
+        System.out.println(name + " sleeps 8 hours");  
+    }  
+
+    public static void main(String[] args) {  
+        System.out.println("Main starts");  
+        Student s = new Student();  
+        s.study();  
+        s.sleep();  
+        System.out.println("Main ends");  
+    }  
+}  
+```
+
+
+
