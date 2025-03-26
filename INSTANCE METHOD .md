@@ -1,7 +1,8 @@
 
-     # **INSTANCE METHOD**
+    # **Methods in Java** 
      
-# **Methods in Java**  
+# **INSTANCE METHOD**  
+## **Methods in Java**
 
 A **method** is a collection of statements that **perform a specific task** and **return a result** to the caller.  
 - A method can **return a value** or perform a task **without returning anything**.  
