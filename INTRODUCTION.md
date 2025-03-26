@@ -143,7 +143,9 @@ An **Identifier** is a name used to identify a class, method, variable, or other
 ### **Example:**  
 ```java
 class Bike {  
-}  
+}
+```
+
 ![image](https://github.com/user-attachments/assets/ed7d5df4-e451-4bb4-8bef-8a1843469097)
 # Good Practice / Coding Standards / Naming Convention for Class  
 
@@ -153,7 +155,7 @@ class Bike {
 - **Use Nouns** → Class names should represent an entity or object.  
 
 ### **Examples:**  
-✅ `class Student { }` (Correct)  
+✅ ```class Student { }``` (Correct)  
 ✅ `class EmployeeDetails { }` (Correct)  
 ❌ `class students { }` (Incorrect - Plural)  
 ❌ `class emp_details { }` (Incorrect - Not Camel Case)  
