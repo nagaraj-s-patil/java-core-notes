@@ -169,3 +169,50 @@ class BlackDog {
 }  
 ```
 
+# 1.7 Association (Has-A Relationship)  
+
+**Association** is an Object-Oriented concept also known as **Has-A Relationship**.  
+It represents the process of one or multiple objects being associated with another object.  
+
+## **Types of Association:**  
+1. **Composition**  
+2. **Aggregation**  
+
+---
+
+## **1.7.1 Composition**  
+
+**Composition** is a special form of association where the associated object **cannot exist independently** without the owner object.  
+
+- If the **owner object is destroyed**, the **associated object is also destroyed**.  
+- This is known as a **Strong Has-A Relationship**.  
+
+### **Example:**  
+
+```java
+class Engine {  
+    void start() {  
+        System.out.println("Engine started");  
+    }  
+}  
+
+class Car {  
+    private Engine engine;  
+
+    Car() {  
+        engine = new Engine();  // Engine object is created inside Car  
+    }  
+
+    void startCar() {  
+        engine.start();  
+        System.out.println("Car started");  
+    }  
+}  
+
+public class Main {  
+    public static void main(String[] args) {  
+        Car myCar = new Car();  
+        myCar.startCar();  
+    }  
+}  
+```
