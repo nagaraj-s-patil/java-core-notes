@@ -259,3 +259,44 @@ class Example implements Serializable {
 ```
 
 ---
+
+### **Short Answers (Easy & Clear):**  
+
+**43. What is a Java array?**  
+A Java array is a fixed-size collection of elements of the same type.  
+
+**44. Declare and initialize arrays.**  
+```java
+int[] numbers = {1, 2, 3};  
+String[] names = new String[]{"Alice", "Bob"};  
+double[] values = new double[5];  
+```
+
+**45. How do you find the length of an array?**  
+Use `.length` to get the array size:  
+```java
+int length = numbers.length;
+```
+
+**61. What is an ArrayList?**  
+An `ArrayList` is like an array but can grow and shrink automatically.  
+
+**64. What is a HashMap?**  
+A `HashMap` stores data in key-value pairs, like a dictionary.  
+
+**69. What is a HashSet?**  
+A `HashSet` stores unique items and does not allow duplicates.  
+
+---
+
+### **Long Answers (Short & Simple):**  
+
+**46. What is the difference between arrays and ArrayList?**  
+- **Size:** Arrays have a fixed size, while `ArrayList` can grow and shrink.  
+- **Methods:** `ArrayList` has built-in methods (`add()`, `remove()`, etc.), arrays do not.  
+- **Performance:** Arrays are faster, while `ArrayList` uses more memory due to dynamic resizing.  
+
+**60. What is the difference between String, StringBuilder, and StringBuffer?**  
+- **Mutability:** `String` is immutable, while `StringBuilder` and `StringBuffer` can change.  
+- **Thread-Safety:** `StringBuffer` is thread-safe (synchronized), `StringBuilder` is not.  
+- **Performance:** `StringBuilder` is the fastest since it has no synchronization overhead.  
