@@ -23,9 +23,7 @@ A **ClassLoader** in Java is responsible for loading class files into memory dur
    - Loads classes from the **classpath** (`CLASSPATH` environment variable, default is the current directory).  
    - Loads user-defined classes (our Java application classes).  
 
-Let me know if you need code examples! 🚀
 
----
 
 **2. Heap Area - Objects get created here.**  
 The **Heap Area** is a memory space where objects are dynamically allocated during runtime.  
