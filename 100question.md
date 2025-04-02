@@ -7,7 +7,23 @@
 A **ClassLoader** in Java is responsible for loading class files into memory during runtime. There are three main types:  
 - **Bootstrap ClassLoader**  
 - **Extension ClassLoader**  
-- **Application ClassLoader**  
+- **Application ClassLoader**
+- 
+  ### **Types of ClassLoaders in Java**
+
+1️⃣ **Bootstrap ClassLoader**  
+   - **Loads core Java classes** (from `rt.jar` like `java.lang.*`, `java.util.*`).  
+   - **Parent of all class loaders** but has **no parent itself**.  
+
+2️⃣ **Extension ClassLoader**  
+   - Loads classes from the **`ext`** directory (`$JAVA_HOME/lib/ext`).  
+   - Loads **Java extensions** (like security-related classes).  
+
+3️⃣ **Application ClassLoader (System ClassLoader)**  
+   - Loads classes from the **classpath** (`CLASSPATH` environment variable, default is the current directory).  
+   - Loads user-defined classes (our Java application classes).  
+
+Let me know if you need code examples! 🚀
 
 ---
 
